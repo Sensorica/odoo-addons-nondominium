@@ -28,17 +28,17 @@
         </field>
     </record>
 
-    <!-- Configuration tree view -->
-    <record id="view_nondominium_config_tree" model="ir.ui.view">
-        <field name="name">nondominium.config.tree</field>
+    <!-- Configuration list view -->
+    <record id="view_nondominium_config_list" model="ir.ui.view">
+        <field name="name">nondominium.config.list</field>
         <field name="model">nondominium.config</field>
         <field name="arch" type="xml">
-            <tree string="Nondominium Configurations">
+            <list string="Nondominium Configurations">
                 <field name="name"/>
                 <field name="hc_gw_url"/>
                 <field name="hc_app_id"/>
                 <field name="active"/>
-            </tree>
+            </list>
         </field>
     </record>
 
@@ -46,7 +46,7 @@
     <record id="action_nondominium_config" model="ir.actions.act_window">
         <field name="name">Nondominium Configuration</field>
         <field name="res_model">nondominium.config</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">list,form</field>
     </record>
 
     <!-- Settings menu item -->
